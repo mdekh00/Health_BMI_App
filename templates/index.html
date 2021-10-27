@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health App</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+</head>
+<body>
+    <h1>Health Application</h1>
+    <div>
+        <h2>BMI index & Body Fat Calculator</h2>
+        <form action="{{url_for('results')}}" method="POST">
+            <label for="gender">Gender</label><br>
+            <input type ="radio" id = "male" name = "gender" value="Male" required>
+            <label for = "male" >Male</label><br>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female </label><br><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="0" step="1"required>
+            <p>Height &emsp;
+            <input type="number" name = "ft" id="htft" min="0" max="12" step="1" required>
+            ft
+            <input type="number" name = "inch" id="htin" min="0" max="12" step="0.01" required>
+            in 
+            </p>
+            <label for="wt"> Weight</label>
+            <input type="number" name="wt" min="0.01" step="0.01" required>lbs<br><br>
+            <input type="submit" id="submit1" class="submit" value="Calculate">
+
+        </form>
+    </div>
+</body>
+</html>

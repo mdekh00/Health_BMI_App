@@ -1,0 +1,39 @@
+html{
+    background:radial-gradient(rgb(212, 212, 26, rgb(235, 235, 180)));
+}
+h1{
+    color: rgb(247, 247, 247);
+    text-align: center;
+    font-size: 5em;
+    font-weight: bolder;
+    margin: 0em;
+    padding: 0.2em;
+    background-color: rgb(42, 43, 48);
+}
+h2{
+    color: rgb(157, 190, 21)
+}
+h4{
+    color:rgb(50, 52, 58)
+}
+.submit{
+    color: white;
+    background-color:rgb(109, 116, 80) ;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+.resform{
+    color:white;
+    background-color: rgb(52,79,153);
+    padding: 0.2em;
+    font-size: 1em;
+    cursor: pointer;
+}
+.resspan{
+    background-color: rgb(194,180,150);
+    font-weight: bold;
+}
+.fitalic{
+    font-style: italic;
+}

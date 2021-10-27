@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health App - Results</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <h1>RESULTS</h1>
+    <div>
+        <p class ="fitalic">The BMI index for a person with height {{ft}}ft {{inch}}in and weight {{wt}}lbs id <span class="resspan">{{bmi}}</span></p>
+        <p class="fitalic"> The body fat percentage for a {{gender}} of {{age}} years old with height {{ft}}ft {{inch}}in and weight {{wt}}lbs is <span class="resspan"> {{bfp}}</span></p>
+        <form>
+            <input type="button" class="resform" value="Go Back!" onclick = "history.back()">
+
+        </form>
+    
+    </div>
+    <div>
+        <h2>How we calculate</h2>
+        <h4>Body Mass index</h4>
+        <p>
+            BMI = 703 x weight(lbs)/height(in)<sup>2</sup>
+        </p>
+
+        <H4>Body Fat percentage for Adult males</H4>
+        <p>
+            BFP = 1.20 X BMI + 0.23 X Age - 16.2
+        </p>
+        <h4>Body Fat percentage for Adult Females</h4>
+        <p>
+            BFP = 1.20 X BMI + 0.23 X AGE -5.4
+        </p>
+        <h4> Body Fat Percentage for boys</h4>
+        <p>
+            BFP = 1.51 X BMI -7.0x Age-2.2
+        </p>
+        <h4> Body Fat Percentage for girls</h4>
+        <p>
+            BFP = 1.51 X BMI -7.0 X Age+ 1.4
+        </p>
+
+    </div>
+</body>
+</html>
